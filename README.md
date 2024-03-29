@@ -174,6 +174,7 @@ start the building process from a tmux session so that it does not get interrupt
 if the SSH session closes due to inactivity.
 
     tmux new -s plop
+    sudo apt-get install debhelper dh-virtualenv
     make deb-pkg -j$(($(nproc)+1))
 
 - Press `Ctrl+B` followed by `D` to detach from a session
